@@ -1,0 +1,19 @@
+.p-single-code{
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F5F5F5;
+    height: 237px;
+    display: flex;
+    align-items: center;
+    code{
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        p{
+            font-size: 16px;
+            color: #3C2A10;
+        }
+    }
+}

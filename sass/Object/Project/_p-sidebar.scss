@@ -1,0 +1,75 @@
+@mixin menu-bar {
+    margin-left: 34px;
+    margin-bottom: 40px;
+
+    p{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #707070;
+    }
+    li{
+        font-size: 20px;
+        font-weight: normal;
+        color: #707070;
+        margin-bottom: 23px;
+        margin-left: 15px;
+    }
+}
+
+.p-sidebar{
+    background-color: #F2EDE9;
+    @media screen and (max-width:1025px) {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        right: -340px;
+        background-color: #F2EDE9;
+        z-index: 2;
+        overflow-y: scroll;
+        padding-bottom: 500px;
+    }
+    h2{
+        font-size: 34px;
+        font-weight: bold;
+        font-family: "Roboto";
+        color: #707070;
+        margin-top: 82px;
+        margin-left: 34px;
+        margin-right: 178px;
+        margin-bottom: 85px;
+        @media screen and (max-width:1025px) {
+            display: none;
+            
+        }
+    }
+    a{
+        display: none;
+        @media screen and (max-width:1025px){
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin-left: 230px;
+            margin-top: 18px;
+            font-size: 300%;
+            background-image: url("../images/cross.png");
+            background-repeat: no-repeat;
+        }
+    }
+    &__barger{
+        @include menu-bar();
+        @media screen and (max-width:1025px){
+            margin-top: 212px;
+        }
+    }
+    &__side{
+        @include menu-bar();
+    }
+    &__drink{
+        @include menu-bar();
+    }
+}
+.open{
+    right: 0;
+    transition: 0.2s;
+}

@@ -1,0 +1,19 @@
+.p-dammy{
+    width: 100%;
+    height: 530px;
+    background-image: url("../images/dammy.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+    @media screen and (max-width:600px) {
+     height: 375px;   
+    }
+    h1{
+        font-size: 40px;
+        color: #FFFFFF;
+        margin-left: 86px;
+    }
+}

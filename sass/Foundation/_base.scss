@@ -1,0 +1,9 @@
+body{
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+    @media screen and (min-width:1025px) {
+        display: grid;
+        grid-template-rows: 217px auto 150px;
+        grid-template-columns: 81% 19%;
+    }
+}

@@ -1,0 +1,49 @@
+.p-search-form{
+    display: flex;
+    margin-right: 31px;
+    @media screen and (max-width:600px) {
+        margin: 0 auto;   
+    }
+    &__forms{
+        border: 1px solid #707070;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        width: 396px;
+        height: 46px;
+        @media screen and (max-width:600px) {
+            width: 300px;
+        }
+
+         /* アイコンを設置するため左の余白を多めに指定*/
+    }
+    &__megane{
+        background: url("../images/megane.png") no-repeat top 11px left 11px ;  /* 背景にアイコン画像を配置 */
+        padding-left: 40px;
+        background-color: #FFFFFF;
+    }
+    &__words{
+        font-size: 16px;
+        width: 136px;
+        height: 46px;
+        text-align: center;
+        color: #707070;
+        background-color: #F2EDE9;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        margin-left: 13px;
+        @media screen and (max-width:600px) {
+            width: 100px;
+        }
+    }
+}
+/*虫眼鏡ーーーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+.p-search-form::before {
+    content: "";           /* 疑似要素に必須 */
+    width: 24px;           /* アイコンの横幅 */
+    height: 24px;          /* アイコンの高さ */
+
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute;    /* 相対位置に指定 */
+    top: 11px;              /* アイコンの位置。微調整してね */
+    left: 12px;             /* アイコンの位置。微調整してね */
+  }

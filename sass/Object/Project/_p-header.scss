@@ -1,0 +1,42 @@
+.p-header{
+    background-color: #FFF7EF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width:1250px) {
+        justify-content: center;
+        flex-flow: column;
+    }
+    @media screen and (max-width:1025px) {
+        height: 217px;
+    }
+    a{
+        display: none;
+        @media screen and (max-width:1025px) {
+            display: inline;
+            position: absolute;
+            font-size: 34px;
+            top: 20px;
+            right: 20px;
+            color: #707070;
+            text-decoration: none;
+            @media screen and (max-width:600px) {
+                font-size: 20px;
+            }
+        }
+    }
+}
+.p-header h2{
+    color: #707070;  
+    font-size: 64px;
+    font-family: "Roboto";
+    width: 325px;  
+    height: 84px;
+    margin-left: 65px;
+    @media screen and (max-width:1250px){
+        margin-bottom: 38px;
+    }
+    @media screen and (max-width:1025px) {
+        font-size: 40px;
+    }
+}

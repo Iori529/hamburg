@@ -1,0 +1,35 @@
+@mixin midasi ($top:60px,$font:36px,$weight:bold) {
+    margin-top: $top;
+    margin-left: auto;
+    margin-right: auto;
+    color: #3C2A10;
+    display: block;
+    width: 85%;
+    text-align: left;
+    font-size: $font;
+    font-weight: $weight;
+}
+
+.p-single-section{
+    width: 100%;
+    h2{
+        @include midasi();
+    }
+    p{
+        @include midasi(60px, 16px,lighter );
+
+    }
+    h3{
+        @include midasi(60px, 28px,bold );
+    }
+    h4{
+        @include midasi(60px, 20px,bold );
+    }
+    h5{
+        @include midasi(60px, 20px,bold );
+    }
+    h6{
+        @include midasi(60px, 20px,bold );
+        margin-bottom: 60px;
+    }
+}
