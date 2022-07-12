@@ -1,7 +1,8 @@
-<article class="l-sideber p-sidebar js-open">
+  <nav class="l-sideber p-sidebar js-open">
                 <h2>Menu</h2>
                 <span><a href="#" class="js-button"></a></span>
-                <ul class="p-sidebar__barger"><p>バーガー</p>
+                <?php wp_nav_menu( array('menu' => 'sidebarmenu') ); ?>
+                <!-- <ul class="p-sidebar__barger"><p>バーガー</p>
                     <li>ハンバーガー</li>
                     <li>チーズバーガー</li>
                     <li>テリヤキバーガー</li>
@@ -23,5 +24,5 @@
                     <li>アップル</li>
                     <li>紅茶(Ice/Hot)</li>
                     <li>コーヒー(Ice/Hot)</li>
-                </ul>
-            </article> <!--Menu-->
+                </ul> -->
+ </nav> 

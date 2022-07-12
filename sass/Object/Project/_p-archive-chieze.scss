@@ -1,0 +1,141 @@
+.p-archive-chieze{
+    @media screen and (min-width:600px) {
+        flex-direction: row;
+        min-height: 471px;
+        width: 91%;
+    }
+    margin-top: 30px;
+    display: flex;  
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 1060px;
+    min-height: 585px;
+    flex-direction: column;
+
+    &__section{
+        display: flex;
+        flex-direction: column;
+        min-height: 471px;
+        width: 100%;
+        background-color: #3C2B1C;
+        @media screen and (min-width:600px){
+            width: 50%;
+        }
+        h1{
+            display: block;
+            width: 85%;
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 53px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 47px;
+            text-align: left;
+        }
+        div{
+
+            h2{
+                display: block;
+                width: 85%;
+                font-size: 24px;
+                font-weight: bold;
+                color: #ffffff;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 17px;
+            }
+            p{
+                display: block;
+                width: 85%;
+                font-size: 16px;
+                color: #ffffff;
+                font-weight: lighter;
+                text-align: left;  
+                margin-left: auto;
+                margin-right: auto;
+            }
+            a{
+                text-align: center;
+                color: #707070;
+                background-color: #ffffff;
+                width: 200px;
+                min-height: 60px;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 45px;
+                display: block;
+                margin-top: 30px;
+                margin-bottom: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 60px;
+            }
+        }
+    }
+
+}
+
+.attachment-full{
+    min-height: 230px;
+         width: 100%;
+         @media screen and (min-width:600px){
+             width: 50%;
+             min-height: 471px;
+         }
+}
+.wp-pagenavi{
+    margin: 0 auto;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    @media screen and (min-width:600px){
+        justify-content: center;
+        text-align: center;
+        gap: 8px;
+    }
+    .pages{
+        display: none;
+        @media screen and (min-width:600px){
+            display: inline;
+            padding-top: 8px;
+            color: #707070;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+
+    .larger{
+        display: none;
+        @media screen and (min-width:600px) {
+            display: inline;
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 7px;
+            border: solid #000000;   
+        }
+    }
+    .current{
+        display: none;
+        @media screen and (min-width:600px) {
+            display: inline;
+            width: 35px;
+            height: 35px;
+            font-size: 16px;
+            font-weight: bold;
+            padding-top: 7px;
+            border: solid #000000;   
+        }
+    }
+    .nextpostslink{
+        margin: auto 0;
+        width: 35px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

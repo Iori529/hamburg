@@ -18,3 +18,32 @@
         font-size: 14px;
     }
 }
+.menu-footermenu-container{
+    height: 150px;
+}
+#menu-footermenu{
+    position: relative;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.menu-item-190{
+    color: #FFFFFF;
+    font-size: 20px;
+    &::after{
+        position: absolute;
+        content: "";
+        display: block;
+        background-color: #FFFFFF;
+        width: 30px;
+        height: 2px;
+        transform: rotate(90deg);
+        left: 114px;
+        top: 73px;
+    }
+}
+.menu-item-195{
+    color: #FFFFFF;
+    font-size: 20px;
+}

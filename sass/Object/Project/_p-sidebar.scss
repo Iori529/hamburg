@@ -29,46 +29,112 @@
         overflow-y: scroll;
         padding-bottom: 500px;
     }
-    h2{
-        font-size: 34px;
-        font-weight: bold;
-        font-family: "Roboto";
-        color: #707070;
-        margin-top: 82px;
-        margin-left: 34px;
-        margin-right: 178px;
-        margin-bottom: 85px;
-        @media screen and (max-width:1025px) {
-            display: none;
+     h2{
+         font-size: 34px;
+         font-weight: bold;
+         font-family: "Roboto";
+         color: #707070;
+         margin-top: 82px;
+         margin-left: 34px;
+         margin-right: 178px;
+         margin-bottom: 85px;
+         @media screen and (max-width:1025px) {
+             display: none;
             
-        }
-    }
+         }
+     }
+//     a{
+//         display: none;
+//         @media screen and (max-width:1025px){
+//             display: block;
+//             width: 100px;
+//             height: 100px;
+//             margin-left: 230px;
+//             margin-top: 18px;
+//             font-size: 300%;
+//             background-image: url("../images/cross.png");
+//             background-repeat: no-repeat;
+//         }
+//     }
+//     &__barger{
+//         @include menu-bar();
+//         @media screen and (max-width:1025px){
+//             margin-top: 212px;
+//         }
+//     }
+//     &__side{
+//         @include menu-bar();
+//     }
+//     &__drink{
+//         @include menu-bar();
+//     }
+// }
+}
+// .menu-sidebarmenu-container{
+//     height: 1000px;
+// }
+.menu{
+    height: 70vh;
+}
+.menu-item-47{
+    margin-left: 20px;
+    height: 435px;
     a{
-        display: none;
-        @media screen and (max-width:1025px){
-            display: block;
-            width: 100px;
-            height: 100px;
-            margin-left: 230px;
-            margin-top: 18px;
-            font-size: 300%;
-            background-image: url("../images/cross.png");
-            background-repeat: no-repeat;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #707070;
+        padding-bottom: 20px;
+    }
+
+}
+.sub-menu{
+    margin-top: 20px;
+    li{
+        a{
+        font-size: 20px;
+        font-weight: lighter;
+        color: #707070;
+        margin-bottom: 23px;
+        margin-left: 15px;
         }
     }
-    &__barger{
-        @include menu-bar();
-        @media screen and (max-width:1025px){
-            margin-top: 212px;
-        }
+
+}
+
+.menu-item-48{
+    margin-left: 20px;
+    height: 239px;
+    a{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #707070;
     }
-    &__side{
-        @include menu-bar();
-    }
-    &__drink{
-        @include menu-bar();
+
+}
+.sub-menu{
+    li{
+        font-size: 20px;
+        font-weight: normal;
+        color: #707070;
+        margin-bottom: 23px;
+        margin-left: 15px;
     }
 }
+
+.menu-item-49{
+    margin-left: 20px;
+    height: 239px;
+    a{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        color: #707070;
+    }
+
+}
+
 .open{
     right: 0;
     transition: 0.2s;

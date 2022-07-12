@@ -2,8 +2,33 @@
 <?php get_sidebar(); ?> <!--siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
 
         <main class="l-main p-fixed">
-            <section class="p-h1-chieze"> <!--ダミーサイト-->
-                <h1>h1 チーズバーガー</h1>
+        <?php 
+                if( have_posts() ) : //1.投稿データがあるかの条件分岐。
+                    while( have_posts() ) : // 2.表示する投稿データがあれば繰り返し処理開始
+                        the_post(); ?> <!--3.ループ処理に必要なカウント処理等-->
+                    <?php
+                        if (has_post_thumbnail()) :
+                        $id = get_post_thumbnail_id();
+                        $img = wp_get_attachment_image_src($id, 'full');
+                        else :
+                        $img = array(get_template_directory_uri() . 'images/chieze.png');
+                    endif;
+                    ?>
+                    <div <?php post_class('p-h1-chieze'); ?>>
+                        <h1 style="background-image: url('<?php echo $img[0]; ?>');">
+                            <a><?php the_title(); ?></a>
+                        </h1>
+                    </div>
+                    <div class="p-single-p">
+                        <?php the_content(); ?>
+                    </div>
+
+            <?php endwhile; // 5.繰り返し処理ここまで。投稿データがまだあればwhileに戻る。なければ終了
+                else : //6.投稿データがなければ
+            ?><p>表示する記事がありません</p><?php //7.ない時の処理
+            endif; ?>  
+            <!-- <section class="p-shop"> 
+                <h1>ショップについて</h1>
             </section>
             <section class="p-single-section">
                 <h2>見出しh2</h2>
@@ -106,7 +131,7 @@
             <div class="p-single-button">
             <button type="button" class="p-single-button__button">ボタン</button>
             </div>
-            <p class="p-single-bold">boldboldboldboldboldboldbold</p>
+            <p class="p-single-bold">boldboldboldboldboldboldbold</p> -->
         </main>
         <?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
     </body>
