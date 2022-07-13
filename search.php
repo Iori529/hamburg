@@ -3,7 +3,7 @@
 
         <main class="l-main p-fixed">
         <?php
-  if(have_posts() && get_search_query()):
+  if(have_posts() && get_search_query($escaped)):
     while(have_posts()):
       the_post(); ?>
                   <div class="p-archive-chieze">
