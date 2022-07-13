@@ -19,6 +19,7 @@
 
 .p-sidebar{
     background-color: #F2EDE9;
+    min-height: 1500px;
     @media screen and (max-width:1025px) {
         position: fixed;
         height: 100vh;
@@ -78,7 +79,7 @@
 }
 .menu-item-47{
     margin-left: 20px;
-    height: 435px;
+    min-height: 435px;
     a{
         font-size: 24px;
         font-weight: bold;
@@ -104,7 +105,7 @@
 
 .menu-item-48{
     margin-left: 20px;
-    height: 239px;
+    min-height: 239px;
     a{
         font-size: 24px;
         font-weight: bold;
@@ -125,7 +126,7 @@
 
 .menu-item-49{
     margin-left: 20px;
-    height: 239px;
+    min-height: 239px;
     a{
         font-size: 24px;
         font-weight: bold;

@@ -483,6 +483,7 @@ body {
 
 .p-sidebar {
   background-color: #F2EDE9;
+  min-height: 1500px;
 }
 @media screen and (max-width: 1025px) {
   .p-sidebar {
@@ -518,7 +519,7 @@ body {
 
 .menu-item-47 {
   margin-left: 20px;
-  height: 435px;
+  min-height: 435px;
 }
 .menu-item-47 a {
   font-size: 24px;
@@ -541,7 +542,7 @@ body {
 
 .menu-item-48 {
   margin-left: 20px;
-  height: 239px;
+  min-height: 239px;
 }
 .menu-item-48 a {
   font-size: 24px;
@@ -560,7 +561,7 @@ body {
 
 .menu-item-49 {
   margin-left: 20px;
-  height: 239px;
+  min-height: 239px;
 }
 .menu-item-49 a {
   font-size: 24px;
